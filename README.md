@@ -1,16 +1,16 @@
-# nickel-lazy-demo
-Demo "laziness" of nickel and nix.
+# Demo "laziness" of nickel and nix.
 
-# Setup
+
+## Setup
 
 Have `nix` installed. [instructions](https://nixos.org/download)
 
 Run `nix develop` to start a dev shell that includes the nickel binary. 
 
 
-# Demo
+## Demo
 
-## Laziness in nickel
+### Laziness in nickel
 
 The file is `demo.ncl`. The `dirs.error_on_eval` key will result in division by zero error.
 
@@ -25,7 +25,7 @@ However, exporting only the `files.custom_bashrc` is fine:
 nickel export demo.ncl --field files.custom_bashrc
 ```
 
-## Laziness in nix
+### Laziness in nix
 
 The file is `demo.nix`. Similarly, the `dirs.error_on_eval` key will result in division by zero error.
 
